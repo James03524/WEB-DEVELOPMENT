@@ -1,0 +1,107 @@
+/* 
+-- Responsive Breakpoints
+sm: 640px - mobile
+md: 768px - tablet
+lg: 1024px - laptop
+xl: 1280px - wide desktop
+*/
+
+/* Reusable CSS */
+@import "button.css";
+@import "card.css";
+
+/* Section CSS */
+@import "navbar.css";
+@import "hero-banner.css";
+@import "services.css";
+@import "contact.css";
+@import "thankyou.css";
+@import "footer.css";
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #4b2e2e;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Buttons (base style to be extended in button.css) */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Team member image styles */
+.team-member img {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Ensure both width and height are the same */
+  object-fit: cover; /* Ensures image is cropped to fit within the square */
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a nice effect */
+  margin-bottom: 15px; /* Spacing between image and name */
+}
+
+/* Additional optional styling for consistency */
+.team-member {
+  text-align: center; /* Centers the name and image */
+}
+
+/* Responsive helpers (optional if not in other CSS files) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
